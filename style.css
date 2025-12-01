@@ -1585,3 +1585,61 @@ body {
   }
 }
 
+
+ @media (max-width: 920px) {
+ 
+
+  .hero-right {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .form-card {
+    position: fixed;
+    width: 300px !important;  
+    height: 260px;         
+    top: 65.5%;
+    right: 10%;
+    
+    transform: translateX(-50%) translateY(-50%);
+    padding: 12px;
+    border-radius: 10px;
+  }
+
+  /* Title Smaller */
+  .form-title {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+
+  /* Price Smaller */
+  .price-box {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+
+  .old-price {
+    font-size: 14px;
+  }
+
+  .new-price {
+    font-size: 18px;
+  }
+
+  /* Inputs Smaller */
+  .enroll-form input {
+    padding: 6px 10px;
+    font-size: 11px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+  }
+
+  /* Button Smaller */
+  .submit-btn {
+    padding: 8px;
+    font-size: 12px;
+    border-radius: 6px;
+  } 
+ 
+}
