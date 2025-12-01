@@ -1092,7 +1092,7 @@ body {
     position: fixed;
     width: 300px !important;  
     height: 260px;         
-    top: 71.5%;
+    top: 65.5%;
     right: 15%;
     
     transform: translateX(-50%) translateY(-50%);
@@ -1265,7 +1265,7 @@ body {
     padding: 18px;
     border-radius: 14px;
   }
-
+  
   /* Icon smaller */
   .holding-icon {
     width: 60px;
@@ -1479,14 +1479,14 @@ body {
 
   .mobile-wa-btn {
     display: flex !important;
-    flex-direction: row !important; /* same line */
+    flex-direction: column !important; /* 🔥 Icon up + text down */
     align-items: center;
     justify-content: center;
-    gap: 8px;                      /* icon & text space */
+    gap: 2px; /* icon & text ke beech chhoti space */
 
-    width: auto;                  
-    height: 50px;
-    padding: 0 14px;              
+    width: auto;
+    height: 60px;
+    padding: 6px 10px;
 
     background: #25D366;
     border-radius: 10px;
@@ -1495,24 +1495,93 @@ body {
     right: 5px;
     z-index: 99999;
 
-    text-decoration: none !important;   /* ✔ underline removed */
+    text-decoration: none !important;
   }
 
   .mobile-wa-btn img {
-    width: 29px;
-    height: 30px;
+    width: 28px;
+    height: 28px;
   }
 
   .wa-text {
-    font-size: 19px;
+    font-size: 10px;  /* text chhota */
     font-weight: 600;
     color: white;
+    margin-top: -2px; /* thoda upar chipka hua look */
   }
 }
 
+/* Desktop me hide */
 @media (min-width: 769px) {
   .mobile-wa-btn {
     display: none;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Laptop/Desktop (1024px and above) */
+@media (min-width: 1024px) {
+
+  .holding-cards {
+    display: grid;
+    grid-template-columns: 1fr 1.9fr; /* 2 columns */
+    margin-left: 153px;
+    align-items: start;
+  }
+
+  /* Third card → second row RIGHT side */
+  .holding-card:nth-child(3) {
+    grid-column: 1;   /* go to right column */
+    right: -220px;
+    position: relative;
+     
+  }
+}
+
+
+
+@media (min-width: 1024px) {
+
+  /* Third card → second row RIGHT side */
+  .rp-card:nth-child(3) {
+    grid-column: 1;   /* go to right column */
+    right: -220px;
+    position: relative;
+     
+  }
+}
+
+@media (min-width: 1024px) {
+
+  /* Third card → second row RIGHT side */
+  .mentor-section {
+   width: 1160px;
+     
   }
 }
 
