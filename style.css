@@ -1602,7 +1602,7 @@ body {
     height: 260px;
 
     /* UNIVERSAL PERFECT CENTER */
-    top: 70vh;              /* Same vertical position in all phones */
+    top: 50vh;              /* Same vertical position in all phones */
     left: 54px;             /* Horizontal center anchor */
     transform: translateX(-50%) translateY(-50%); /* PERFECT center */
 
