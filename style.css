@@ -1022,4 +1022,455 @@ body {
   font-size: 15px;
   line-height: 1.6;
   color: #444;
+} 
+/* --------- REVIEW SECTION MOBILE RESPONSIVE --------- */
+@media (max-width: 768px) {
+
+  .review-section {
+    padding: 40px 20px;
+  }
+
+  .review-title {
+    font-size: 26px;
+    margin-bottom: 25px;
+  }
+
+  /* Grid becomes 1 column */
+  .review-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .review-card {
+    padding: 18px;
+    border-radius: 14px;
+  }
+
+  .review-header {
+    gap: 10px;
+  }
+
+  .review-img {
+    width: 42px;
+    height: 42px;
+  }
+
+  .review-card h3 {
+    font-size: 17px;
+  }
+
+  .review-position {
+    font-size: 13px;
+  }
+
+  .verified {
+    padding: 4px 8px;
+    font-size: 12px;
+  }
+
+  .stars {
+    font-size: 18px;
+  }
+
+  .review-text {
+    font-size: 14px;
+    line-height: 1.45;
+  }
 }
+
+ @media (max-width: 768px) {
+ 
+
+  .hero-right {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .form-card {
+    position: fixed;
+    width: 300px !important;  
+    height: 260px;         
+    top: 65%;
+    right: 7%;
+    
+    transform: translateX(-50%) translateY(-50%);
+    padding: 12px;
+    border-radius: 10px;
+  }
+
+  /* Title Smaller */
+  .form-title {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+
+  /* Price Smaller */
+  .price-box {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+
+  .old-price {
+    font-size: 14px;
+  }
+
+  .new-price {
+    font-size: 18px;
+  }
+
+  /* Inputs Smaller */
+  .enroll-form input {
+    padding: 6px 10px;
+    font-size: 11px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+  }
+
+  /* Button Smaller */
+  .submit-btn {
+    padding: 8px;
+    font-size: 12px;
+    border-radius: 6px;
+  } 
+ 
+}
+
+
+
+
+@media (max-width: 768px) {
+
+  .bonus-section {
+    padding: 40px 20px;
+  }
+
+  .bonus-title {
+    font-size: 24px;
+    margin-bottom: 30px;
+    line-height: 1.3;
+  }
+
+  /* Cards become 1-column */
+  .bonus-cards {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .bonus-card {
+    width: 100%;
+    padding-bottom: 15px;
+    border-radius: 14px;
+  }
+
+  .bonus-img {
+    height: 130px;   /* Smaller height */
+    object-fit: cover;
+  }
+
+  .bonus-content {
+    padding: 15px;
+  }
+
+  .bonus-content h3 {
+    font-size: 18px;
+    margin-bottom: 6px;
+  }
+
+  .bonus-content p {
+    font-size: 13px;
+    line-height: 1.4;
+  }
+
+  .bonus-btn {
+    font-size: 14px;
+    padding: 12px 30px;
+    border-radius: 8px;
+    margin-top: 20px;
+  }
+}
+
+
+@media (max-width: 768px) {
+
+  .mentor-section {
+    padding: 40px 20px;
+  }
+
+  .mentor-card {
+    flex-direction: column;  
+    width: 100%;
+    padding: 25px 15px;
+    gap: 20px;
+  }
+
+  /* Image Center + Smaller */
+  .mentor-left {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .mentor-img {
+    width: 180px;      /* Smaller image */
+    height: auto;
+  }
+
+  /* Text Section */
+  .mentor-right {
+    width: 100%;
+    text-align: center;
+  }
+
+  .mentor-title {
+    font-size: 26px;
+    margin-bottom: 12px;
+  }
+
+  .mentor-text {
+    font-size: 14px;
+    line-height: 1.5;
+    padding: 0 5px;
+    text-align: left;
+  }
+
+  .mentor-highlight {
+    padding: 2px 5px;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .holding-section {
+    
+  }
+
+  .holding-title {
+    font-size: 26px;
+    margin-bottom: 25px;
+    line-height: 1.3;
+   
+  }
+
+  /* Cards 1-column */
+  .holding-cards {
+    flex-direction: column;
+    gap: 20px;
+    padding: 0;
+  }
+
+  .holding-card {
+    width: 100%;
+    padding: 18px;
+    border-radius: 14px;
+  }
+
+  /* Icon smaller */
+  .holding-icon {
+    width: 60px;
+    margin-bottom: 12px;
+    border-radius: 10px;
+  }
+
+  .holding-card h3 {
+    font-size: 18px;
+    margin-bottom: 6px;
+    line-height: 1.3;
+  }
+
+  .holding-card p {
+    font-size: 13px;
+    line-height: 1.35;
+  }
+}
+
+
+
+@media (max-width: 768px) {
+
+  /* HERO SECTION MOBILE FIX */
+  .hero-section {
+    padding: 40px 20px 100px;
+  }
+
+  .hero-content {
+    display: block; /* Left content full width */
+  } 
+  .hero-content{ 
+    top: 20px;
+  }
+
+  /* LEFT CONTENT */
+  .hero-left {
+    width: 100%;
+  }
+
+  .hero-left h1 {
+    font-size: 26px;
+    line-height: 34px;
+    margin-bottom: 25px;
+    text-align: left;
+  }
+
+  /* FEATURE BOXES → 2 PER ROW */
+  .features {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);   /* 2 per row */
+    gap: 14px;
+  }
+
+  .feature-box {
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 8px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .feature-box img {
+    width: 20px;
+    height: 20px;
+  }
+
+  /* BUTTON CENTER (looks cleaner on mobile) */
+  .start-learning {
+    display: block;     /* full width line-block */
+    margin: 22px auto 0; /* auto = center */
+    text-align: center;
+  }
+
+  /* DO NOT TOUCH FORM CARD (Your Requirement) */
+}
+
+@media (max-width: 768px) {
+
+  /* Arrows hide in mobile */
+  .rp-arrows {
+    display: none !important;
+  }
+
+  /* Left area text better readable */
+  .rp-left {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 25px;
+  }
+
+  .rp-title {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .rp-title span {
+    text-decoration-thickness: 2px;
+  }
+
+  /* Button center in mobile */
+  .rp-btn {
+    display: block;
+    margin: 20px auto;
+    padding: 12px 30px;
+    font-size: 15px;
+  }
+
+  /* Cards make full width */
+  .rp-right {
+    width: 100%;
+  }
+
+  .rp-cards {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .rp-card {
+    width: 100%;
+  }
+
+  .rp-card-content h3 {
+    font-size: 18px;
+    margin-bottom: 8px;
+  }
+
+  
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    min-height: 73vh;   /* जितनी height चाहिए उतनी कर दो */
+  }
+} 
+/* WhatsApp Button Desktop View */
+
+
+/* Hide WhatsApp button on mobile */
+.whatsapp-btn {
+  padding: 10px 25px;
+  background: #25D366;
+  color: white;
+  font-size: 18px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: none;
+  transition: 0.3s ease;
+}
+
+.whatsapp-btn:hover {
+  background: #1ebe5d;
+}
+
+.wa-icon {
+  width: 22px;
+  height: 22px;
+  fill: white;
+}
+
+/* Hide WhatsApp button on mobile */
+@media (max-width: 768px) {
+  .enroll-fixed-bar {
+    display: none;
+  }
+}
+
+/* Floating WhatsApp Icon (Mobile Only) */
+.mobile-wa-btn {
+  position: fixed;
+  top: 80px;              /* Top से थोड़ा नीचे */
+  right: 15px;            /* Right side */
+  z-index: 99999;
+  width: 50px;
+  height: 50px;
+  background: #25D366;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.25);
+  animation: fadeIn 0.5s ease;
+}
+
+/* WhatsApp icon image */
+.mobile-wa-btn img {
+  width: 28px;
+  height: 28px;
+}
+
+/* Desktop me hide */
+@media (min-width: 769px) {
+  .mobile-wa-btn {
+    display: none;
+  }
+}
+
+/* Simple fade animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.6); }
+  to   { opacity: 1; transform: scale(1); }
+}
+
