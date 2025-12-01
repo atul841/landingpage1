@@ -766,6 +766,7 @@ body {
 
   .hero-left {
     width: 100%;
+   
   }
 
   /* Fixed Form -> Bottom (Mobile Style) */
@@ -1091,8 +1092,8 @@ body {
     position: fixed;
     width: 300px !important;  
     height: 260px;         
-    top: 65%;
-    right: 7%;
+    top: 71.5%;
+    right: 15%;
     
     transform: translateX(-50%) translateY(-50%);
     padding: 12px;
@@ -1399,13 +1400,11 @@ body {
 
 @media (max-width: 768px) {
   .hero-section {
-    min-height: 73vh;   /* जितनी height चाहिए उतनी कर दो */
+    min-height: 60vh;   
   }
 } 
-/* WhatsApp Button Desktop View */
 
 
-/* Hide WhatsApp button on mobile */
 .whatsapp-btn {
   padding: 10px 25px;
   background: #25D366;
@@ -1444,10 +1443,10 @@ body {
   top: 80px;              /* Top से थोड़ा नीचे */
   right: 15px;            /* Right side */
   z-index: 99999;
-  width: 50px;
+  width: 100px;
   height: 50px;
   background: #25D366;
-  border-radius: 50%;
+  border-radius: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1472,5 +1471,48 @@ body {
 @keyframes fadeIn {
   from { opacity: 0; transform: scale(0.6); }
   to   { opacity: 1; transform: scale(1); }
+}
+
+
+/* MOBILE VIEW — ICON + TEXT ONE ROW */
+@media (max-width: 768px) {
+
+  .mobile-wa-btn {
+    display: flex !important;
+    flex-direction: row !important; /* same line */
+    align-items: center;
+    justify-content: center;
+    gap: 8px;                      /* icon & text space */
+
+    width: auto;                  
+    height: 50px;
+    padding: 0 14px;              
+
+    background: #25D366;
+    border-radius: 10px;
+    position: fixed;
+    top: 80px;
+    right: 5px;
+    z-index: 99999;
+
+    text-decoration: none !important;   /* ✔ underline removed */
+  }
+
+  .mobile-wa-btn img {
+    width: 29px;
+    height: 30px;
+  }
+
+  .wa-text {
+    font-size: 19px;
+    font-weight: 600;
+    color: white;
+  }
+}
+
+@media (min-width: 769px) {
+  .mobile-wa-btn {
+    display: none;
+  }
 }
 
