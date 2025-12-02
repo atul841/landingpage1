@@ -67,7 +67,7 @@ body {
 .hero-section::after {
   content: "";
   width: 100%;
-  height: 160px;
+  height: 140px;
   background: white;
   position: absolute;
   bottom: 0;
@@ -1085,7 +1085,7 @@ body {
   .hero-right {
     width: 100%;
     display: flex;
-    justify-content: center;
+    
   }
 
   .form-card {
@@ -1480,8 +1480,7 @@ body {
   .mobile-wa-btn {
     display: flex !important;
     flex-direction: column !important; /* 🔥 Icon up + text down */
-    align-items: center;
-    justify-content: center;
+    
     gap: 2px; /* icon & text ke beech chhoti space */
 
     width: auto;
@@ -1544,19 +1543,19 @@ body {
 
 
 
-/* Laptop/Desktop (1024px and above) */
+
 @media (min-width: 1024px) {
 
   .holding-cards {
     display: grid;
-    grid-template-columns: 1fr 1.9fr; /* 2 columns */
+    grid-template-columns: 1fr 1.9fr; 
     margin-left: 153px;
     align-items: start;
   }
 
-  /* Third card → second row RIGHT side */
+  
   .holding-card:nth-child(3) {
-    grid-column: 1;   /* go to right column */
+    grid-column: 1;   
     right: -220px;
     position: relative;
      
@@ -1567,9 +1566,9 @@ body {
 
 @media (min-width: 1024px) {
 
-  /* Third card → second row RIGHT side */
+  
   .rp-card:nth-child(3) {
-    grid-column: 1;   /* go to right column */
+    grid-column: 1;   
     right: -220px;
     position: relative;
      
@@ -1578,7 +1577,7 @@ body {
 
 @media (min-width: 1024px) {
 
-  /* Third card → second row RIGHT side */
+  
   .mentor-section {
    width: 1160px;
      
@@ -1601,23 +1600,23 @@ body {
     width: 300px !important;
     height: 260px;
 
-    /* UNIVERSAL PERFECT CENTER */
-    top: 60vh;              /* Same vertical position in all phones */
-    left: 54px;             /* Horizontal center anchor */
-    transform: translateX(-50%) translateY(-50%); /* PERFECT center */
+    
+    top: 60vh;              
+    left: 54px;            
+    transform: translateX(-50%) translateY(-50%); 
 
     padding: 12px;
     border-radius: 10px;
     z-index: 9999;
   }
 
-  /* Title Smaller */
+  
   .form-title {
     font-size: 14px;
     margin-bottom: 10px;
   }
 
-  /* Price Smaller */
+  
   .price-box {
     font-size: 14px;
     margin-bottom: 10px;
@@ -1631,7 +1630,7 @@ body {
     font-size: 18px;
   }
 
-  /* Inputs Smaller */
+ 
   .enroll-form input {
     padding: 6px 10px;
     font-size: 11px;
@@ -1639,7 +1638,7 @@ body {
     border-radius: 6px;
   }
 
-  /* Button Smaller */
+  
   .submit-btn {
     padding: 8px;
     font-size: 12px;
