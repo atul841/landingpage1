@@ -16,7 +16,9 @@
   </a>
 </div>
 
-     <button class="enroll-btn" onclick="openPopup()">Enroll Now</button>
+     <button class="enroll-btn" onclick="highlightForm()">Enroll Now</button>
+
+
   </nav>  
   <!-- MOBILE FLOATING WHATSAPP ICON -->
 <a href="https://wa.link/w2fkq6" target="_blank" class="mobile-wa-btn">
@@ -30,7 +32,11 @@
   <!-- HERO SECTION START -->
 <section class="hero-section">
 
-  <div class="top-badge">Webinar Everyday </div>
+  <div class="top-badge" onclick="highlightForm()" style="cursor:pointer;">
+  Webinar Everyday
+</div>
+
+
 
   <div class="hero-content">
 
@@ -45,20 +51,42 @@
         <div class="feature-box"><img src="logo.png"> Hindi/English</div>
       </div>
 
-      <button class="start-learning">Start Learning</button>
+      <button class="start-learning" onclick="highlightForm()">Start Learning</button>
+
+
     </div>
 
-    <!-- RIGHT SIDE -->
-    <!-- FIXED FORM SECTION --> 
+    
      
 <div class="hero-right">
-  <div class="form-card">
+  <div class="form-card" id="desktopForm">
+
+    <!-- MESSAGE -->
+    <p class="fill-msg" id="deskFillMsg">Please fill the form</p>
 
     <h3 class="form-title">Join The Revolution</h3>
 
     <div class="price-box">
       <span class="old-price">₹500</span>
       <span class="new-price">₹5</span>
+
+      <!-- DESKTOP TIMER -->
+      <div class="desktop-time-badge" id="deskTimer">
+
+        <span class="t-box t-m1">0</span>
+        <span class="t-box t-m2">0</span>
+
+        <span class="t-colon">:</span>
+
+        <span class="t-box t-s1">0</span>
+        <span class="t-box t-s2">0</span>
+
+        <span class="t-colon">:</span>
+
+        <span class="t-box t-ms1">0</span>
+        <span class="t-box t-ms2">0</span>
+
+      </div>
     </div>
 
     <form class="enroll-form">
@@ -72,6 +100,8 @@
 
   </div>
 </div>
+
+
 
 
   </div>
@@ -524,14 +554,37 @@ participants to join at the scheduled time to get the full learning experience.
 
  <!-- this is from section as the part of here  -->
 
-    <div class="mobile-form-wrapper">
-      <div class="mobile-form-card">
+   <div class="mobile-form-wrapper">
+  <div class="mobile-form-card">
+    <p class="fill-msg" id="fillMsg">Please fill the form</p>
 
     <h3 class="mobile-form-title">Join The Revolution</h3>
 
     <div class="mobile-price-box">
       <span class="mobile-old-price">₹500</span>
       <span class="mobile-new-price">₹5</span>
+
+      <!-- PREMIUM TIMER ADDED HERE -->
+          <div class="mobile-time-badge" id="timer">
+  
+  <span class="t-box t-m1">0</span>
+  <span class="t-box t-m2">0</span>
+
+  <span class="t-colon">:</span>
+
+  <span class="t-box t-s1">0</span>
+  <span class="t-box t-s2">0</span>
+
+  <span class="t-colon">:</span>
+
+  <span class="t-box t-ms1">0</span>
+  <span class="t-box t-ms2">0</span>
+
+</div>
+
+
+
+
     </div>
 
     <form class="mobile-enroll-form">
@@ -541,10 +594,12 @@ participants to join at the scheduled time to get the full learning experience.
       <input type="text" placeholder="City" required>
 
       <button class="mobile-submit-btn">Enroll Now</button>
-     </form>
+    </form>
 
-     </div> 
-   </div>
+  </div>
+</div>
+
+
 
 
 
