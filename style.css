@@ -1763,3 +1763,51 @@ body {
   margin-top: -25px;
 }
 
+
+
+
+.bg-only {
+  position: relative;
+  padding: 20px;
+  border-radius: 12px;
+  background: url('why.jpeg') center/cover no-repeat;
+  color: white;             /* text readable */
+}
+
+/* हल्का dark layer ताकि text पढ़े */
+.bg-only::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.35);   /* हल्की सी black transparency */
+  border-radius: 12px;
+}
+
+.bg-only * {
+  position: relative;
+  z-index: 1;   /* text ऊपर */
+}
+
+.bg-only-2 {
+  position: relative;
+  padding: 20px;
+  border-radius: 12px;
+  background: url('why2.jpg') center/cover no-repeat;
+  color: white;
+  text-align: left;
+}
+
+/* हल्की dark overlay */
+.bg-only-2::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.35);
+  border-radius: 12px;
+}
+
+/* text ऊपर रहे */
+.bg-only-2 * {
+  position: relative;
+  z-index: 1;
+}
