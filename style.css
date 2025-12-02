@@ -1256,7 +1256,7 @@ body {
 
 @media (max-width: 768px) {
   .hero-section {
-    min-height: 60vh;   
+    min-height: 80vh;   
   }
 } 
 
@@ -1346,7 +1346,7 @@ body {
     background: #25D366;
     border-radius: 10px;
     position: fixed;
-    top: 325px;
+    top: 365px;
     right: 5px;
     z-index: 99999;
 
@@ -1693,7 +1693,7 @@ body {
 /* FAQ fully scrollable when mobile-form is fixed */
 @media (max-width: 768px) {
   .faq-section {
-    padding-bottom: 345px; /* form ki height ke hisaab se extra space */
+    padding-bottom: 405px; /* form ki height ke hisaab se extra space */
   }
 }
 
@@ -1736,4 +1736,29 @@ body {
 
 .fill-msg.show {
   display: block;
+}
+
+@media (max-width:786px) {
+     .mentor-text{ 
+      
+     }
+}
+
+
+.mentor-labels {
+  display: flex;
+  justify-content: space-between;   /* LEFT & RIGHT */
+  width: 100%;
+  margin-top: 20px;
+  padding: 0 20px;
+}
+
+.host-tag,
+.cohost-tag {
+  font-size: 16px;
+  font-weight: bold;
+  background: #f1f1f1;
+  padding: 6px 14px;
+  border-radius: 6px;
+  margin-top: -25px;
 }
