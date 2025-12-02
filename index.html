@@ -71,22 +71,7 @@
       <span class="new-price">₹5</span>
 
       <!-- DESKTOP TIMER -->
-      <div class="desktop-time-badge" id="deskTimer">
-
-        <span class="t-box t-m1">0</span>
-        <span class="t-box t-m2">0</span>
-
-        <span class="t-colon">:</span>
-
-        <span class="t-box t-s1">0</span>
-        <span class="t-box t-s2">0</span>
-
-        <span class="t-colon">:</span>
-
-        <span class="t-box t-ms1">0</span>
-        <span class="t-box t-ms2">0</span>
-
-      </div>
+     
     </div>
 
     <form class="enroll-form">
@@ -569,21 +554,14 @@ participants to join at the scheduled time to get the full learning experience.
     <div class="mobile-price-box">
       <img src="5001.png" alt="" width="140px" height="50px" style="margin-top: 20px;">
 
-      <!-- PREMIUM TIMER ADDED HERE -->
-         <div class="mobile-time-badge" id="timer" style=" position: relative;top: -23px;">
-
-  <span class="t-box t-m1">0</span>
-  <span class="t-box t-m2">0</span>
-
-  <span class="t-colon">:</span>
-
-  <span class="t-box t-s1">0</span>
-  <span class="t-box t-s2">0</span>
-
+      <!-- PREMIUM TIMER -->
+      <div class="mobile-time-badge" id="mobileTimer" style="position: relative; top: -23px;">
+    <span class="t-box t-m1">0</span>
+    <span class="t-box t-m2">0</span>
+    <span class="t-colon">:</span>
+    <span class="t-box t-s1">0</span>
+    <span class="t-box t-s2">0</span>
 </div>
-
-
-
 
 
     </div>
@@ -601,48 +579,8 @@ participants to join at the scheduled time to get the full learning experience.
 </div>
 
 
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
 
-  // Always start fresh at 30:00 every reload
-  let remaining = 30 * 60 * 1000; // 30 minutes in ms
 
-  const m1 = document.querySelector(".t-m1");
-  const m2 = document.querySelector(".t-m2");
-  const s1 = document.querySelector(".t-s1");
-  const s2 = document.querySelector(".t-s2");
-
-  // If timer boxes are missing → stop
-  if (!m1 || !m2 || !s1 || !s2) {
-    console.log("Timer elements missing!");
-    return;
-  }
-
-  function updateTimer() {
-    let minutes = Math.floor(remaining / 60000);
-    let seconds = Math.floor((remaining % 60000) / 1000);
-
-    let mm = ("0" + minutes).slice(-2);
-    let ss = ("0" + seconds).slice(-2);
-
-    m1.textContent = mm[0];
-    m2.textContent = mm[1];
-    s1.textContent = ss[0];
-    s2.textContent = ss[1];
-
-    remaining -= 1000;
-
-    // Restart timer automatically when finished
-    if (remaining <= 0) {
-      remaining = 30 * 60 * 1000;
-    }
-  }
-
-  updateTimer();           // first call so 30:00 immediately दिखे
-  setInterval(updateTimer, 1000);  // run every second
-});
-
-</script>
 
 
 
