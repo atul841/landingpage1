@@ -26,36 +26,7 @@ faqItems.forEach(item => {
   });
 });
 
-function openPopup() {
-  document.getElementById("popup").style.display = "flex";
-}
-
-function closePopup() {
-  document.getElementById("popup").style.display = "none";
-}
 
 
-// Check if popup was already shown
-if (!localStorage.getItem("popupShown")) {
 
-  // Auto open after 3 sec
-  setTimeout(() => {
-    openPopup();
-  }, 3000);
 
-  // Auto close after 17 sec
-  setTimeout(() => {
-    closePopup();
-  }, 17000);
-
-  // Mark popup as shown
-  localStorage.setItem("popupShown", "true");
-}
-
-function openPopup() {
-  document.getElementById("popup").style.display = "flex";
-}
-
-function closePopup() {
-  document.getElementById("popup").style.display = "none";
-}

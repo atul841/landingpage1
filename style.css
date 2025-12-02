@@ -861,95 +861,7 @@ body {
   }
 }
 
-/* Popup Overlay */
-.popup-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0,0,0,0.75);
-  display: none;
-  align-items: center;
-  justify-content: center;
-  z-index: 999999;
-}
 
-/* Popup Box */
-.popup-box {
-  width: 380px;
-  background: #043030;
-  padding: 25px;
-  border-radius: 12px;
-  border: 3px solid #2ecc71;
-  color: white;
-  position: relative;
-  animation: popupShow 0.4s ease;
-}
-
-@keyframes popupShow {
-  from { transform: scale(0.8); opacity: 0; }
-  to { transform: scale(1); opacity: 1; }
-}
-
-/* Close button */
-.popup-close {
-  position: absolute;
-  right: 12px;
-  top: 4px;
-  font-size: 28px;
-  cursor: pointer;
-}
-
-/* Title */
-.popup-title {
-  text-align: center;
-  font-size: 26px;
-  font-weight: 700;
-  margin-bottom: 20px;
-}
-
-/* Price */
-.popup-price {
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.popup-old-price {
-  text-decoration: line-through;
-  color: #ff7777;
-  margin-right: 8px;
-  font-size: 20px;
-}
-
-.popup-new-price {
-  color: #2ecc71;
-  font-size: 26px;
-  font-weight: 800;
-}
-
-/* Form Inputs */
-.popup-form input {
-  width: 100%;
-  padding: 12px 14px;
-  margin-bottom: 12px;
-  border-radius: 8px;
-  border: 1px solid #ccc;
-  font-size: 16px;
-}
-
-/* Button */
-.popup-submit {
-  width: 100%;
-  padding: 14px;
-  border-radius: 8px;
-  background: linear-gradient(to right, #2ecc71, #0b3d1e);
-  border: none;
-  color: white;
-  font-size: 18px;
-  cursor: pointer;
-  font-weight: 600;
-}
 
 .review-section {
   padding: 80px 100px;
@@ -1079,63 +991,7 @@ body {
   }
 }
 
- @media (max-width: 768px) {
- 
 
-  .hero-right {
-    width: 100%;
-    display: flex;
-    
-  }
-
-  .form-card {
-    position: fixed;
-    width: 300px !important;  
-    height: 260px;         
-    top: 65.5%;
-    right: 15%;
-    
-    transform: translateX(-50%) translateY(-50%);
-    padding: 12px;
-    border-radius: 10px;
-  }
-
-  /* Title Smaller */
-  .form-title {
-    font-size: 14px;
-    margin-bottom: 10px;
-  }
-
-  /* Price Smaller */
-  .price-box {
-    font-size: 14px;
-    margin-bottom: 10px;
-  }
-
-  .old-price {
-    font-size: 14px;
-  }
-
-  .new-price {
-    font-size: 18px;
-  }
-
-  /* Inputs Smaller */
-  .enroll-form input {
-    padding: 6px 10px;
-    font-size: 11px;
-    margin-bottom: 10px;
-    border-radius: 6px;
-  }
-
-  /* Button Smaller */
-  .submit-btn {
-    padding: 8px;
-    font-size: 12px;
-    border-radius: 6px;
-  } 
- 
-}
 
 
 
@@ -1490,7 +1346,7 @@ body {
     background: #25D366;
     border-radius: 10px;
     position: fixed;
-    top: 80px;
+    top: 360px;
     right: 5px;
     z-index: 99999;
 
@@ -1583,71 +1439,218 @@ body {
      
   }
 }
-
-
-
-
-@media (max-width: 920px) {
-
-  .hero-right {
-    width: 100%;
-    display: flex;
-    justify-content: center;
+@media (max-width:768px) {
+  .hero-right{ 
+    display: none;
   }
-
-  .form-card {
-    position: fixed;
-    width: 300px !important;
-    height: 260px;
-
-    
-    top: 60vh;              
-    left: 54px;            
-    transform: translateX(-50%) translateY(-50%); 
-
-    padding: 12px;
-    border-radius: 10px;
-    z-index: 9999;
-  }
-
   
-  .form-title {
-    font-size: 14px;
-    margin-bottom: 10px;
-  }
-
-  
-  .price-box {
-    font-size: 14px;
-    margin-bottom: 10px;
-  }
-
-  .old-price {
-    font-size: 14px;
-  }
-
-  .new-price {
-    font-size: 18px;
-  }
-
- 
-  .enroll-form input {
-    padding: 6px 10px;
-    font-size: 11px;
-    margin-bottom: 10px;
-    border-radius: 6px;
-  }
-
-  
-  .submit-btn {
-    padding: 8px;
-    font-size: 12px;
-    border-radius: 6px;
-  }
 }
 
 
 
+
+
+
+
+
+
+
+/* ============================
+   NEW FORM DESIGN (same look)
+============================ */
+
+.mobile-form-card {
+  background: #003327;
+  padding: 22px;
+  border-radius: 16px;
+  width: 100%;
+  max-width: 360px;
+  margin: 0 auto;
+  box-shadow: 0px 0px 12px rgba(0,0,0,0.15);
+}
+
+.mobile-form-title {
+  text-align: center;
+  color: #fff;
+  font-size: 24px;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.mobile-price-box {
+  text-align: center;
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.mobile-old-price {
+  color: #d46d6d;
+  text-decoration: line-through;
+  margin-right: 10px;
+}
+
+.mobile-new-price {
+  color: #4caf50;
+  font-weight: bold;
+}
+
+.mobile-enroll-form input {
+  width: 100%;
+  padding: 14px;
+  margin-bottom: 14px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+}
+
+.mobile-submit-btn {
+  width: 100%;
+  padding: 16px;
+  background: linear-gradient(to right, #18e07d, #0a3d21);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 18px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.mobile-submit-btn:hover {
+  opacity: 0.92;
+}
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+
+  .mobile-form-wrapper {
+    width: 100%;
+    padding: 0 12px;
+    z-index: 9999;
+  }
+
+  .mobile-form-card {
+    border-radius: 16px 16px 0 0;
+  }
+
+  .form-fixed {
+    position: fixed !important;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+
+  .form-scroll {
+    position: absolute !important;
+    left: 0;
+    right: 0;
+  }
+}
+
+
+/* FORM default → HIDE everywhere */
+.mobile-form-wrapper {
+  display: none;
+}
+
+/* Only Mobile me Show */
+@media (max-width: 768px) {
+  .mobile-form-wrapper {
+    display: block;
+  }
+}
+
+
+/* Default: hide on desktop */
+.mobile-form-wrapper {
+  display: none;
+}
+
+/* Only MOBILE */
+@media (max-width: 768px) {
+
+  .mobile-form-wrapper {
+    display: block;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 0 10px;
+    z-index: 999999;
+  }
+
+  /* SMALL FORM CARD */
+  .mobile-form-card {
+    background: #003327;
+    padding: 14px;
+    border-radius: 14px 14px 0 0;
+    width: 100%;
+    max-width: 340px;   /* ↓ ↓ WIDTH SMALL */
+    margin: 0 auto;
+  }
+
+  .mobile-form-title {
+    text-align: center;
+    color: #fff;
+    font-size: 18px;     /* ↓ ↓ SMALL TEXT */
+    margin-bottom: 10px;
+    font-weight: 600;
+  }
+
+  /* Price */
+  .mobile-price-box {
+    text-align: center;
+    font-size: 16px;   /* ↓ ↓ smaller */
+    margin-bottom: 14px;
+  }
+
+  .mobile-old-price {
+    color: #f09999;
+    text-decoration: line-through;
+    margin-right: 8px;
+  }
+
+  .mobile-new-price {
+    color: #4caf50;
+    font-weight: bold;
+  }
+
+  /* INPUTS → smaller */
+  .mobile-enroll-form input {
+    width: 100%;
+    padding: 10px;      /* ↓ ↓ small padding */
+    margin-bottom: 10px;
+    font-size: 14px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+  }
+
+  /* BUTTON → smaller */
+  .mobile-submit-btn {
+    width: 100%;
+    padding: 12px;      /* ↓ ↓ small */
+    background: linear-gradient(to right, #18e07d, #0a3d21);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;    /* ↓ ↓ small */
+    font-weight: 600;
+    cursor: pointer;
+  }
+}
+
+/* FAQ fully scrollable when mobile-form is fixed */
+@media (max-width: 768px) {
+  .faq-section {
+    padding-bottom: 345px; /* form ki height ke hisaab se extra space */
+  }
+}
 
 
 
