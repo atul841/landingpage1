@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>LandingPage</title>
   <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
   
 </head>
 <body>
@@ -16,7 +17,7 @@
   </a>
 </div>
 
-     <button class="enroll-btn" onclick="highlightForm()">Enroll Now</button>
+    
 
 
   </nav>  
@@ -32,58 +33,175 @@
   <!-- HERO SECTION START -->
 <section class="hero-section">
 
-  <div class="top-badge" onclick="highlightForm()" style="cursor:pointer;">
-  Webinar Everyday
-</div>
+  
 
 
 
   <div class="hero-content">
 
     <!-- LEFT SIDE -->
-    <div class="hero-left">
-      <h1 style="font-size: 23px;">Build Your First ₹1 Lakh/Month Online Business Using 5 Free AI <br> Tools — No Skill Needed</h1>
+    <div class="hero-left"> 
+      <style> 
+        @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+       .heading {
+    font-family: 'Anton', sans-serif;
+    font-weight: 400;
+    font-size: 200px;        /* your size */
+    letter-spacing: 1px;    /* same spacing effect */
+    line-height: 1.05;
+    text-transform: uppercase;
+    color: white;
+}
+  
+.highlight-green {
+    font-family: 'Anton', sans-serif;
+    color: #00ff9d;      /* neon green same look */
+    font-size: 140px;    /* bigger Lakh text */
+    font-weight: 300; 
+    position: absolute;
+    top: 210px;
+    left: 170px;
+}
 
-      <div class="features">
-        <div class="feature-box"><img src="logo.png"> Free 5 AI Tools </div>
-        <div class="feature-box"><img src="logo.png"> 50+ Min</div>
-        <div class="feature-box"><img src="logo.png"> Live</div>
-        <div class="feature-box"><img src="logo.png"> Hindi/English</div>
-      </div>
+.rupee {
+    font-family: 'Anton', sans-serif;
+    font-size: 45px;
+    vertical-align: middle;
+    position: absolute;
+    top: 192px;
+    left: 110px;
+    
+}
+.permonth{ 
+  font-family: 'Anton', sans-serif; 
+  font-size: 29px;
+  margin-left: 290px;
+  position: absolute;
+  top: 289px;
+  font-weight: 100;
+  left: 90px;
 
-      <button class="start-learning" onclick="highlightForm()">Start Learning</button>
+} 
+.online{ 
+   font-family: 'Anton', sans-serif; 
+  position: absolute;
+  top: 323px;
+  font-size: 90px;
+   font-weight: 300; 
+} 
+ .heading { 
+  font-size: 200px;
+   font-weight: 300; 
+ }
+ .learn{ 
+    font-family: 'Anton', sans-serif; 
+    font-size: 90px;  
+     font-weight: 200; 
 
 
+ } 
+ .build{ 
+    font-family: 'Anton', sans-serif; 
+    font-size: 90px;  
+    position: absolute;
+    top: 100px;
+     font-weight: 300; 
+    
+ } 
+ .frist{ 
+   font-family: 'Anton', sans-serif; 
+   font-weight: 300;
+   position: absolute;
+   top: 195px;
+ }
+      </style>
+      <h1 class="heading">
+    <span class="learn">LEARN TO</span> <br>
+    <span class="build">BUILD YOUR</span> <br>
+   <span class="frist"> FIRST</span> <span class="rupee">₹</span>
+    <span class="highlight-green">1 LAKH</span> <br>
+   <span class="permonth"> PER MONTH</span> <br> 
+    <span class="online"> ONLINE</span>
+</h1>
+
+
+      
     </div>
 
     
      
-<div class="hero-right">
-  <div class="form-card" id="desktopForm">
+<div class="mobile-form-card">
 
-    <!-- MESSAGE -->
-    <p class="fill-msg" id="deskFillMsg">Please fill the form</p>
+  <!-- LIMITED OFFER -->
+  <img src="./form assets png transaprent/6.png" class="limited-offer-img" >
 
-    <h3 class="form-title">Join The Revolution</h3>
+  <!-- Board -->
+  <div class="board-box board-ui">
 
-    <div class="price-box">
-      <span class="old-price">₹500</span>
-      <span class="new-price">₹5</span>
-
-      <!-- DESKTOP TIMER -->
-     
-    </div>
-
-    <form class="enroll-form">
-      <input type="text" placeholder="Full Name" required>
-      <input type="number" placeholder="Mobile Number" required>
-      <input type="email" placeholder="Email ID" required>
-      <input type="text" placeholder="City" required>
-
-      <button class="submit-btn">Enroll Now</button>
-    </form>
-
+  <div class="input-row">
+    <span class="input-label">Name</span>
+    <input type="text"  placeholder="" required>
+    
   </div>
+
+  <div class="input-row">
+    <span class="input-label">Number</span>
+    <input type="number"  placeholder="" required>
+    
+  </div>
+
+  <div class="input-row">
+    <span class="input-label">E-mail</span>
+    <input type="email"  placeholder="" required>
+    
+  </div>
+
+  <div class="input-row">
+    <span class="input-label">City</span>
+    <input type="text"  placeholder="" required>
+    
+  </div>
+
+</div> 
+<button class="lastbutton"><img style="width: 200px; margin-top: -4px;" src="./form assets png transaprent/3.png" alt=""></button>
+
+  <!-- TIMER -->
+  <div class="timer-box">
+    <span class="t-box">0</span>
+    <span style="position: relative; right: 8px;" class="t-box">0</span>
+    <span style="margin-top: -1px;" class="t-colon">:</span>
+    <span style="position: relative; right: 8px;"class="t-box">0</span>
+    <span style="position: relative; right: 16px;" class="t-box">0</span>
+  </div>
+   
+  <!-- PRICE -->
+  <div class="price-box">
+    <img src="./form assets png transaprent/4.png" class="price-cut">
+    <br>
+    
+    <p class="price-final" 
+style="
+font-size: 100px; 
+color: #ffffff; 
+margin-left: 195px; 
+margin-top: -35px;
+text-shadow: 
+0 0 10px #006010,
+0 0 20px #30ff8a,
+0 0 30px #006010,
+0 0 40px #006010,
+0 0 55px #006010,
+0 0 70px #006010;
+">
+5
+</p>
+
+    <p style="font-size:55px; margin-top: -290px; color: #00ff66; margin-left: 275px; font-weight: 50;">₹</p>
+  </div>
+
+  <!-- BUTTON -->
+  
+
 </div>
 
 
@@ -92,41 +210,24 @@
   </div>
 
 </section>
-<!-- HERO SECTION END --> 
 
-<!-- HOLDING YOU BACK SECTION -->
-<section class="holding-section">
 
-  <h2 class="holding-title">WHY THIS WEBINAR?</h2>
+<!-- HOLDING YOU BACK SECTION --> 
+<section class="holding-section"  >
 
-  <div class="holding-cards">
+  <h2 class="holding-title"><span style="font-family: 'Anton', sans-serif;font-size: 54px;font-weight: 200;position: absolute; top: 770px; right: 1300px;">WHY</span> <span style="font-size: 150px; font-family: 'Anton', sans-serif; position: absolute; top: 700px; right: 1220px;">5</span></h2>
+   <span style="font-size: 54px; font-family: 'Anton', sans-serif; position: absolute; top: 770px; right: 970px; color: white;">FREE <img style="width: 150px;" src="./fulweb/5.png" alt=""> TOOLS</span>
+  <div class="video">
+    <img style="width: 400px; height: 600px; margin-top: 140px; border-radius: 60px; margin-left: -950px; padding: 30px;" src="./500.png" alt="">
 
-    <!-- Card 1 -->
-   <div class="holding-card bg-only">
-  <h3>Start Your Online Earning Journey With AI</h3>
-  <p style="font-size: 16.5px; color: white;">All Indians are using these 5 simple AI tools to:</p>
-
-  <ul style="margin-left: 30px;">
-    <li>Start online work with 5 simple AI tools</li>
-    <li>Create digital services in minutes</li>
-    <li>Turn AI tasks into paid opportunities</li>
-    <li>Build side-income skills from zero</li>
-    <li>Automate work people pay for</li>
-  </ul>
+  </div>
+   
+  
+  
 </div>
 
 
-    <!-- Card 2 -->
-    <div class="holding-card bg-only-2">
-  <h3>You don’t need skills.</h3>
-  <h3>You don’t need an investment.</h3>
-  <h3>You just need the right guidance.</h3>
-</div>
-
-    
-
-    <!-- Card 3 -->
-    
+   
 
   </div>
 
@@ -545,38 +646,166 @@ participants to join at the scheduled time to get the full learning experience.
 
  <!-- this is from section as the part of here  -->
 
-   <div class="mobile-form-wrapper">
-  <div class="mobile-form-card">
-    <p class="fill-msg" id="fillMsg">Please fill the form</p>
+   <style>
+    @font-face {
+  font-family: 'Six Hands Chalk';
+  src: url('./fonts/SixHandsChalk.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 
-    <h3 class="mobile-form-title">Join The Revolution</h3>
+    /* Outer Box Like Your UI */
+.mobile-form-card{
+  width: 490px;
+  background:#0a2c20;
+  border-radius: 18px;
+  padding: 12px;
+  left: 220px;
+  position: relative;
+  box-shadow:0 0 25px rgba(0,0,0,0.6);
+  height: 310px;
+  margin-top: 183px;
+  max-width: 500px; /* ye limit banata hai */
+}
 
-    <div class="mobile-price-box">
-      <img src="5001.png" alt="" width="140px" height="50px" style="margin-top: 20px;">
+/* Limited Offer Badge */
+.limited-offer-img{
+  width:140px;
+  position:absolute;
+  top:1px;
+  right:7px;
+  z-index:10;
+}
 
-      <!-- PREMIUM TIMER -->
-      <div class="mobile-time-badge" id="mobileTimer" style="position: relative; top: -23px;">
-    <span class="t-box t-m1">0</span>
-    <span class="t-box t-m2">0</span>
-    <span class="t-colon">:</span>
-    <span class="t-box t-s1">0</span>
-    <span class="t-box t-s2">0</span>
-</div>
+/* Chalkboard Background */
+.board-ui{
+  background:url('form assets png transaprent/5.png');
+  background-size:cover;
+  width:325px;
+  height:233px;
+  border-radius:12px;
+  padding:20px 12px;
+  box-sizing:border-box;
+  position:relative;
+}
+
+/* 4 white input boxes */
+.board-input{
+  width: 53%;
+  background:white;
+  height:28px;
+  border-radius:6px;
+  margin-bottom:8px;
+  padding-left:10px;
+  border:none;
+  outline:none;
+  font-size:13px;
+}
+
+/* Timer Box EXACT */
+.timer-box{
+  margin-top:12px;
+  display:flex;
+  justify-content:center;
+  gap:5px;
+  position: relative;
+  right: -350px;
+  background:#00ff66;
+  width: 100px;
+  border-radius: 10px;
+  top: -220px;
+}
+
+.t-box{
+  
+  
+  border-radius:6px;
+  font-weight:700;
+  font-size:30px;
+  color:black;
+   word-spacing: -9px; /* 👈 words ke beech ka gap kam */
+  
+}
+
+.t-colon{
+  font-size:35px;
+  font-weight:bold;
+}
+
+/* Price Area */
+.price-box{
+  text-align:center;
+  margin-top:10px;
+}
+
+.price-cut{
+  width:80px;
+  margin-top:5px;
+  position: relative;
+  top: -220px;
+  right: -170px;
+}
+
+.price-final{
+  width:90px;
+  margin-top:-15px;
+  position: relative;
+  top: -200px;
+  right: -170px;
+  background: none !important;
+  background-color: transparent !important;
+}
 
 
-    </div>
+/* Save My Spot Button */
+.save-btn{
+  width:100%;
+  margin-top:10px;
+}
+.input-row{
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
 
-    <form class="mobile-enroll-form">
-      <input type="text" placeholder="Full Name" required>
-      <input type="number" placeholder="Mobile Number" required>
-      <input type="email" placeholder="Email ID" required>
-      <input type="text" placeholder="City" required>
+.input-row input{
+  width: 190px;
+  padding: 8px;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+  margin-left: 10px;
+  border-color: black;
+}
 
-      <button class="mobile-submit-btn">Enroll Now</button>
-    </form>
+.input-label{
+  color: white;
+  font-size: 28px;
+  margin-left: 10px;
+  font-weight: 600;
+  width: 80px;
+  font-family: "Allura", cursive;
+} 
+.lastbutton{ 
+    width: 260px;
+    height: 48px; 
+    position: relative;
+    top: -2px;
+    left: 34px;
+    border-radius: 10px;
+    background-color: #febe29;
+} 
 
-  </div>
-</div>
+   </style>
+
+
+
+
+
+
+
+
+
 
 
 

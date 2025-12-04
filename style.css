@@ -1,3 +1,5 @@
+ @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -58,23 +60,14 @@ body {
 .hero-section {
   position: relative;
   width: 100%;
-  padding: 120px 100px 200px;
-  background: #08031d;
+  padding: 120px 100px 50px;
+ background-image: url(fulweb/4.png);
   overflow: hidden;
+  height: 90vh;
 }
 
 /* White Bottom Curve */
-.hero-section::after {
-  content: "";
-  width: 100%;
-  height: 140px;
-  background: white;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  border-top-left-radius: 110%;
-  border-top-right-radius: 30%;
-}
+
 
 /* Top Center Badge */
 .top-badge {
@@ -193,15 +186,23 @@ body {
 .holding-section {
   width: 100%;
   text-align: center;
-  padding: 60px 0 50px;
-  margin-top: -50px;
+  padding: 0;
+  background-image: url(fulweb/6.png);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
+
 .holding-title {
-  font-size: 34px;
-  font-weight: 700;
-  margin-bottom: 50px;
-}
+  font-size: 54px;
+  font-weight: 200;
+  
+  color: white;
+   font-family: 'Anton', sans-serif;
+   margin-left: -1200px;
+   
+} 
+
 
 .holding-cards {
   display: flex;
@@ -1379,7 +1380,7 @@ body {
 /* PREMIUM TIMER BADGE */
 /* PREMIUM TIMER */
 .mobile-time-badge {
-  background: #9c43bd;
+  background: #03943f;
   color: #000;
   padding: 6px 12px;
   border-radius: 10px;
@@ -1388,22 +1389,25 @@ body {
   gap: 4px;
   margin-left: 100px;
   font-weight: 700;
-  font-size: 15px;
+  font-size: 25px;
   box-shadow: 0 0 6px rgba(0,0,0,0.2);
-  margin-left: 23px;
+  margin-left: 23px; 
+  width: 140px; 
+
+  
 }
 
 /* Single digit boxes */
 .t-box {
-  background: #fff;
+  
   padding: 3px 6px;
-  border-radius: 6px;
+  
   min-width: 18px;
   text-align: center;
-  font-size: 15px;
+  font-size: 30px;
   font-weight: 700;
-  border: 1px solid #e0c76e;
-  box-shadow: inset 0 0 3px rgba(0,0,0,0.15);
+  
+  
 }
 
 /* Colon between groups */
@@ -1540,6 +1544,7 @@ body {
 }
 
 .mobile-enroll-form input {
+  position: relative;
   width: 100%;
   padding: 14px;
   margin-bottom: 14px;
@@ -1547,6 +1552,7 @@ body {
   border: none;
   outline: none;
   font-size: 16px;
+  top: -50px;
 }
 
 .mobile-submit-btn {
@@ -1559,6 +1565,9 @@ body {
   font-size: 18px;
   cursor: pointer;
   font-weight: bold;
+  position: relative;
+  top: -50px;
+
 }
 
 .mobile-submit-btn:hover {
@@ -1574,9 +1583,11 @@ body {
 @media (max-width: 768px) {
 
   .mobile-form-wrapper {
-    width: 100%;
+    width: 500px;
     padding: 0 12px;
     z-index: 9999;
+    height: 100px;
+    margin-right: 100px;
   }
 
   .mobile-form-card {
@@ -1811,3 +1822,100 @@ body {
   position: relative;
   z-index: 1;
 }
+
+
+
+
+
+
+.mobile-form-wrapper{
+  width: 400px;
+  display: flex;
+  justify-content: center;
+  height: 400px;
+  
+}
+
+.mobile-form-card{
+  width: 320px;
+  background: #004421;
+  border-radius: 15px;
+  padding: 15px;
+  position: relative;
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+  top: -200px;
+}
+
+/* Chalkboard BG */
+.board-box{
+  background: url('./form assets png transaprent/5.png');
+  background-size: cover;
+  width: 100%;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+/* Input styling */
+.board-box input{
+  width: 92%;
+  padding: 9px;
+  border-radius: 7px;
+  border: none;
+  outline: none;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+/* Limited Offer top badge */
+.limited-offer{
+  width: 130px;
+  position: absolute;
+  top: -25px;
+  right: -10px;
+}
+
+/* Timer section */
+.mobile-time-badge{
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+
+.t-box{
+ 
+  color: #000;
+  padding: 5px 10px;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.t-colon{
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* Price section */
+.price-area{
+  text-align: center;
+  margin-top: 10px;
+}
+
+.price-area img{
+  width: 90px;
+}
+
+.big-price{
+  width: 150px;
+}
+
+/* Button */
+.save-btn{
+  width: 100%;
+  margin-top: 15px;
+}
+
+
+/* //////////////////////////////////////////////// */  
