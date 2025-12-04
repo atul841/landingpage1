@@ -1001,7 +1001,7 @@ body {
 
 @media (max-width: 768px) {
   .hero-section {
-    min-height: 99vh; 
+    min-height: 50vh; 
      
   }
 } 
@@ -2265,7 +2265,7 @@ body {
 
 @media (max-width: 768px) {
   body {
-    min-height: 805.2vh; 
+    min-height: 762vh; 
     
   }
 } 
