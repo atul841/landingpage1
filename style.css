@@ -2078,7 +2078,9 @@ body {
     white-space: normal;       
     word-wrap: break-word;      
 } 
-
+.mobile-form-card{ 
+  margin-left: 660px;
+}
 
 
 
