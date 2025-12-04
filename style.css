@@ -1960,6 +1960,7 @@ body {
     border-radius: 18px;
     box-shadow: 0 8px 25px rgba(0,0,0,0.2);
     font-family: Arial, sans-serif;
+    top: -40px;
 }
 
 /* Profile section */
@@ -2033,7 +2034,7 @@ body {
     padding: 18px;
     position: relative;
     right: -60px;
-    top: -470px;
+    top: -410px;
     background: white;
     border-radius: 18px;
     box-shadow: 0 8px 25px rgba(0,0,0,0.2);
