@@ -2059,10 +2059,10 @@ body {
     border: 1px solid rgba(0, 0, 0, 0.08);
     font-family: Arial, sans-serif;
 
-    width: 100%;          /* 🔥 FULL WIDTH SO TEXT FITS */
-    max-width: 600px;     /* optional – can adjust */
+    width: 100%;          
+    max-width: 600px;     
     overflow: visible;  
-    margin-left: 70px;  /* 🔥 VERY IMPORTANT */
+    margin-left: 70px;  
 }
 
 .faq-question {
@@ -2075,9 +2075,10 @@ body {
     font-size: 14px;
     line-height: 1.4;
     color: #4c4c4c;
-    white-space: normal;        /* 🔥 ensures wrapping */
-    word-wrap: break-word;      /* 🔥 safe wrapping */
-}
+    white-space: normal;       
+    word-wrap: break-word;      
+} 
+
 
 
 
