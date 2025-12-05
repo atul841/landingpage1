@@ -114,6 +114,35 @@
    position: absolute;
    top: 195px;
  }   
+ .hero-section {
+  position: relative;
+  overflow: hidden;
+}
+
+
+.hero-section::before {
+  content:"";
+  position: absolute;
+  left:0;
+  top: 0;
+  width: 20%;            
+  height: 100%;
+  background: linear-gradient(to right, rgba(0,0,0,0.7), rgba(0,0,0,0));
+  pointer-events: none;   
+}
+
+
+.hero-section::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 20%;
+  height: 100%;
+  background: linear-gradient(to left, rgba(0,0,0,0.7), rgba(0,0,0,0));
+  pointer-events: none;
+}
+
  
       </style>
       <h1 class="heading">
@@ -124,7 +153,7 @@
            <span class="permonth"> PER MONTH</span> <br> 
            <span class="online"> ONLINE</span>
            <div class="imageadmi">
-         <img style="margin-top: -300px; width: 500px; margin-left: 420px;" src="./fulweb/admi.png" alt="">
+         <img style="margin-top: -300px; width: 500px; margin-left: 380px;" src="./fulweb/admi.png" alt="">
        </div>
 </h1>
 
@@ -367,67 +396,84 @@ text-shadow:
   <span>EVERYTHING <span style="font-size: 60px;">YOU NEED</span></span> <br>
   <span style="font-size: 120px;">TO <span style="color: #00ff66;">KNOW</span></span>
 
-</div> 
-<div class="faq-card">
-    <div class="faq-question" style="margin-left: 23px;">What will I learn in this webinar?</div>
-    
-        You will learn how to turn an idea into a complete brand using five powerful AI tools that are completely free to use. In the session, we cover the full journey: converting an idea into a business plan, creating legal documents and templates, designing brand creatives like logos, generating videos for your brand, building a simple website, and learning how to reach your first 100 customers.
+</div>  
+<section class="faq-section">
+
+  <div class="faq-card">
+    <div class="faq-question">
+      Is this session live or recorded?
+      <span class="arrow">▶</span>
     </div>
-</div> <br>
-<div class="faq-card">
-    <div class="faq-question" style="margin-left: 23px;">Is this session live or recorded?</div>
-    
-        This is a completely live 60‑minute session conducted by real educators. You interact, learn in real time, and follow a practical demonstration using a real‑life example.
+    <div class="faq-answer">
+      This is a completely live 60-minute session conducted by real educators.
     </div>
-</div> <br>
-<div class="faq-card">
-    <div class="faq-question" style="margin-left: 23px;">What do I need to attend the class?</div>
-    
-        All you need is a mobile phone or laptop and a working internet connection. No additional software or setup is required.
+  </div>
+
+  <div class="faq-card">
+    <div class="faq-question">
+      What do I need to attend the class?
+      <span class="arrow">▶</span>
     </div>
-</div> <br>
-<div class="faq-card">
-    <div class="faq-question" style="margin-left: 23px;">Is the webinar priced at ₹500 or ₹5?</div>
-    
-        The content you receive is worth ₹500, but as part of a New Year early‑bird promotion, the first 100 users get access for just ₹5. Once the timer ends or the discounted seats are over, the price automatically shifts to ₹500. If you see ₹5 hold your seat now.
+    <div class="faq-answer">
+      All you need is a mobile phone, laptop, and internet. 
     </div>
-</div> <br>
-<div class="faq-card">
-    <div class="faq-question" style="margin-left: 23px;">Will I get a certificate and notes?</div>
-    
-        Yes. If you stay till the end of the webinar, you will receive a course completion certificate as well as a downloadable PDF handbook. This PDF contains tool links, steps, and revision notes covering everything taught in the session.
-    </div>
-</div> <br>
-<div class="faq-card">
-    <div class="faq-question" style="margin-left: 23px;">What AI tools will be covered?</div>
-    
-        We cover five AI tools available for free to everyone. These tools help you create a business plan, generate legal documents, design brand creatives, create videos, and build your first basic website. All tools taught can be practiced later on your own.
-    </div>
-</div> <br>
-<div class="faq-card">
-    <div class="faq-question" style="margin-left: 23px;">What if I miss my session?</div>
-    
-       No worries. We conduct six sessions every day from Monday to Sunday, starting at 10 AM and running until 9 PM. You can simply select any batch that suits your schedule.
-    </div>
-</div> <br>
-<div class="faq-card">
-    <div class="faq-question" style="margin-left: 23px;">Who should join this webinar?</div>
-    
-       Students, freelancers, entrepreneurs, creators, job‑seekers, and anyone who wants to learn practical AI skills or start a business can benefit from this class.
-    </div>
-</div> <br>
-<div class="faq-card">
-    <div class="faq-question" style="margin-left: 23px;">What happens after I pay and register?</div>
-    
-      A V&V educator will reach out to you within 0–24 hours to help you select your preferred batch timing. After confirming your slot, you will receive your webinar link along with a login password. Please do not share your login details with anyone.
-    </div>
-</div> <br>
-<div class="faq-card">
-    <div class="faq-question" style="margin-left: 23px;">What if my payment fails or I face issues while registering?</div>
-    
-      Simply click the WhatsApp Support button. A V&V educator will respond as soon as possible to help resolve any payment or registration issues.
-    </div>
-</div> <br>
+  </div>
+
+</section>
+<style>
+  .faq-section {
+  width: 70%;
+  margin: 80px auto;
+}
+
+.faq-card {
+  background: white;
+  padding: 18px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+
+.faq-question {
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+  display: flex;
+  justify-content: space-between;
+}
+
+.arrow {
+  transition: 0.3s;
+}
+
+.faq-answer {
+  display: none;
+  color: black;
+  font-size: 17px;
+  margin-top: 10px;
+  line-height: 25px;
+}
+
+.faq-card.active .faq-answer {
+  display: block !important;
+}
+
+.faq-card.active .arrow {
+  transform: rotate(90deg);
+}
+
+</style>
+<script>
+  document.querySelectorAll(".faq-card").forEach(card => {
+    card.addEventListener("click", () => {
+      card.classList.toggle("active");
+    });
+  });
+</script>
+
+
+
 
 
 </section> 
